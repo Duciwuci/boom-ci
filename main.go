@@ -7,23 +7,19 @@ package main
 // Importing packages
 import (
 	"fmt"
-	"sort"
-	"strings"
-	"time"
 )
 
 // Main function
 func main() {
 
 	// Sorting the given slice
-	s := []int{345, 78, 123, 10, 76, 2, 567, 5}
-	sort.Ints(s)
-	fmt.Println("Sorted slice: ", s)
-
-	// Finding the index
-	fmt.Println("Index value: ", strings.Index("GeeksforGeeks", "ks"))
-
+	liste := []int{345, 78}
+	
+	
 	// Finding the time
-	fmt.Println("Time: ", time.Now().Unix())
+	fmt.Println("ergebnis: ", multipliziere(liste[0],liste[1]))
 
+}
+func multipliziere(faktor1,faktor2 int) int {
+	return faktor1 * faktor2
 }
