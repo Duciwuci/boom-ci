@@ -18,8 +18,11 @@ func main() {
 	
 	// Finding the time
 	fmt.Println("Das Ergebnis ist: ", multipliziere(faktoren[0],faktoren[1]))
-
+	fmt.Println("Die Summe ist: ", addiere(faktoren[0],faktoren[1]))
 }
 func multipliziere(faktor1, faktor2 int) int {
 	return faktor1 * faktor2
+}
+func addiere(summand1,summand2 int) int {
+	return summand1 + summand2 
 }
