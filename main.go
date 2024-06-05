@@ -11,7 +11,7 @@ import (
 
 
 func main() {
-	zahlen := []int{345, 78}
+	zahlen := []int{3, 5, 8}
 	
 	
 	fmt.Println("Das Ergebnis der Multiplikation ist: ", multipliziere(zahlen[0],zahlen[1]))
@@ -23,6 +23,8 @@ func main() {
 
 	
 	fmt.Println("Das Ergebnis ist: ", multipliziere3(faktoren[0], faktoren[1]))
+
+	fmt.Println("Das Ergebnis der SChleifenaddiation ist: ", addiereSchleife(zahlen))
 
 }
 func multipliziere(faktor1, faktor2 int) int {
@@ -38,4 +40,13 @@ func multipliziere2(faktor1, faktor2 int) int {
 
 func multipliziere3(faktor1, faktor2 int) int {
 	return faktor1 * faktor2
+}
+func addiereSchleife(summanden []int) int {
+	sum := 0
+	länge := len(summanden) // 3
+
+	for i := 0; i < länge; i++ {
+		sum = sum + summanden[i] 
+	}
+	return sum
 }
