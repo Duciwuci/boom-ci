@@ -20,6 +20,6 @@ func main() {
 	fmt.Println("Das Ergebnis ist: ", multipliziere(faktoren[0],faktoren[1]))
 
 }
-func multipliziere(faktor1,faktor2 int) int {
+func multipliziere(faktor1, faktor2 int) int {
 	return faktor1 * faktor2
 }
