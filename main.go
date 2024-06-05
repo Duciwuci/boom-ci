@@ -13,11 +13,11 @@ import (
 func main() {
 
 	// Sorting the given slice
-	liste := []int{345, 78}
+	faktoren := []int{345, 78}
 	
 	
 	// Finding the time
-	fmt.Println("ergebnis: ", multipliziere(liste[0],liste[1]))
+	fmt.Println("Das Ergebnis ist: ", multipliziere(faktoren[0],faktoren[1]))
 
 }
 func multipliziere(faktor1,faktor2 int) int {
